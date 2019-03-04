@@ -17,9 +17,7 @@ It also handles other salutations like-> greetings(hello, bye and thank you)
   - fuzzywuzzy
   - nltk
   - numpy
-  - random
-  - pickle 
-  - nltk.sentiment.vader,  
+  - nltk.sentiment.vader
   - nltk.corpus
   
 **Note** Type bye or its synonyms to exit from the chatbot
