@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 '''This chatbot is meant to serve following use cases: 
 a.suggest upto three books for asked genre
 b.give the name of the author of the book
@@ -92,6 +93,8 @@ def get_synList(word):
 	return (wordList)
 	
 def main():
+	
+	
 	'''Reading pkl file'''
 	
 	try:
@@ -103,6 +106,7 @@ def main():
 		exit(0)
 	
 	'''Final list of possible inputs for use cases-salutations, author details, link details, genre_books'''
+	
 	
 	hellos = [x.replace("_", " ").replace("-"," ")  for x in set(get_synList("Hello"))]+['hi there', 'hello there']
 	byes = [x.replace("_", " ").replace("-"," ")  for x in set(get_synList("Bye"))]
@@ -116,7 +120,7 @@ def main():
 
 	print('Welcome to chatbot')
 	while True:
-		input_res = input('You:').lower()	#Converting the input in all lowercase
+		input_res = input('You:').lower()
 		
 		'''Calculating the match score of input with the use cases, to handle any possible deviation of the input'''
 		
@@ -194,13 +198,13 @@ def main():
 			sid = SentimentIntensityAnalyzer()
 			ss = sid.polarity_scores(input_res)
 			logging.info("%s has a polarity score of %s"%(input_res, ss))
-			if(ss['neg']>0.6):										#negative
+			if(ss['neg']>0.6):																							#negative
 				response= ["I am sorry", "That's sad", "Pathetic!"]
 
-			elif(ss['pos']>0.6):									#positive
+			elif(ss['pos']>0.6):																						#positive
 				response = ["Wow", "That's a good news", "Great!"]
 
-			else:													#neutral
+			else:																										#neutral
 				response = ["Hmm", "That's interesting", "I did not know that", "I see"]
 
 			print('Book Asst:'+np.random.choice(response))
