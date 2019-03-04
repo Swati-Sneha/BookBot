@@ -11,7 +11,7 @@ This chatbot is meant to serve following use cases:
 
 It also handles other salutations like-> greetings(hello, bye and thank you)
 
-### Requirements:
+### Dependencies:
   - fuzzywuzzy
   - nltk
   - numpy
@@ -20,7 +20,7 @@ It also handles other salutations like-> greetings(hello, bye and thank you)
   - nltk.sentiment.vader,  
   - nltk.corpus
   
-### Type bye or its synonyms to exit from the chatbot
+**Note** Type bye or its synonyms to exit from the chatbot
 
 ### Sample
 ```
