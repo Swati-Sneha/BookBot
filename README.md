@@ -8,6 +8,8 @@ This chatbot is meant to serve following use cases:
   - suggest upto three books for asked genre
   - give the name of the author of the book 
   - give the url of the book by appending the isbn no. to https:/openlibrary.org/
+  
+  Otherwise, it checks the sentiment of the user input to respond accordingly
 
 It also handles other salutations like-> greetings(hello, bye and thank you)
 
