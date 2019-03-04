@@ -1,6 +1,6 @@
 # BookBot
 
-##ChatBot that works on scraped data from https://fbookshelf.herokuapp.com/
+## ChatBot that works on scraped data from https://fbookshelf.herokuapp.com/
 
 This chatbot is meant to serve following use cases: 
 
@@ -11,7 +11,7 @@ This chatbot is meant to serve following use cases:
 
 It also handles other salutations like->greetings(hello, bye and thank you)
 
-###Requirements:
+### Requirements:
   fuzzywuzzy, nltk
   numpy, random, pickle, 
   nltk.sentiment.vader,  
