@@ -2,6 +2,8 @@
 
 ### ChatBot that works on scraped data from https://fbookshelf.herokuapp.com/
 
+The data is scraped from the link using the script ***book_scraper.py*** using beautiful-soup library. A dictionary is created then, with key as genre of book and book deatils appended for each genre, sorted by rating of the book, which is then written to a pickle file -> ***book_data.pkl***. Chatbot gets data from the pickle file.
+
 This chatbot is meant to serve following use cases: 
 
   - List few genres on request
